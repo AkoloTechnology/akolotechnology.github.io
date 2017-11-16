@@ -1,1 +1,0 @@
-# akolotechnology.github.io
