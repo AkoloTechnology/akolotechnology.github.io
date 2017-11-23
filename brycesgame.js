@@ -1,6 +1,6 @@
 /*
-	Dungeon Crawler
-	By: Timothy Fournier
+	Bryce's Game
+	By: Bryce
 	Started 11/16/17
 */
 
