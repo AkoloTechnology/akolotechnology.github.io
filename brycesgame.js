@@ -1,7 +1,6 @@
 /*
 	Bryce's Game
 	By: Bryce
-	Started 11/16/17
 */
 
 // allows you to access the input and textarea fields
