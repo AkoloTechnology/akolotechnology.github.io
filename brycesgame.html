@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div id="toptextbox">
-	<h1 id="toptext">Welcome!</h1>
+	<h1 id="toptext">Dungeon Crawler</h1>
 </div>
 
 <div class="leftmenu">
@@ -15,7 +15,10 @@
 </div>
 
 <div id = "mainarea">
-	Hi
+
+	<textarea id="maintextarea" readonly rows="25" style="resize:none;width:99.7%;"></textarea>
+
+	<input type="text" id="maininput" style="width:100%;"></input>
 </div>
 
 <style>
@@ -24,7 +27,6 @@
 	background-color:#ddd;
     margin: auto;
     width: 50%;
-	height: 300px;
     border: 3px solid green;
     padding: 14px;
 	}
@@ -72,6 +74,10 @@
 		color: white;
 	}
 </style>
+
+<!-- load the game -->
+<script src="brycesgame.js">
+</script>
 
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div id="toptextbox">
-	<h1 id="toptext">Welcome!</h1>
+	<h1 id="toptext">Test Area</h1>
 </div>
 
 <div class="leftmenu">
@@ -15,16 +15,15 @@
 </div>
 
 <div id = "mainarea">
-	Hi
+	<canvas id="gamecanvas" width=600px height=480px></canvas>
 </div>
 
 <style>
 	#mainarea
 	{
 	background-color:#ddd;
+	width: 600px;
     margin: auto;
-    width: 50%;
-	height: 300px;
     border: 3px solid green;
     padding: 14px;
 	}
@@ -43,6 +42,11 @@
 	width: 350px;
 	height: 35px;
 	margin: 0 auto;
+	}
+	
+	canvas 
+	{ 
+	background: #fff; 
 	}
 	
 	.leftmenu
@@ -72,6 +76,10 @@
 		color: white;
 	}
 </style>
+
+<!-- load the game -->
+<script src="visual game.js">
+</script>
 
 </body>
 </html>
