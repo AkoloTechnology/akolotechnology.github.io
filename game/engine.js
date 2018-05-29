@@ -9,6 +9,7 @@ ge_step_function = function(){}
 ge_last_step = 0;
 ge_game_speed = 60; // x game steps per second
 
+ge_mouse_down = false;
 ge_mouse_x = 0;
 ge_mouse_y = 0;
 
@@ -55,11 +56,13 @@ function ge_draw_box(x1,y1,x2,y2){ge_buffer_ctx.strokeRect(x1,y1,x2-x1,y2-y1);}
 
 function ge_game_init(){setInterval(ge_stepset,(1000/(ge_game_speed*2)));}
 
-function ge_update_mouse(evt) {
+function ge_update_mouse_move(evt) {
     var rect = canvas.getBoundingClientRect();
     ge_mouse_x = evt.clientX - rect.left;
     ge_mouse_y = evt.clientY - rect.top;
 }
+
+function ge_update_mouse_click(evt){ge_mouse_down = true;}
 
 function ge_stepset() {
 	var game_time = Date.now();
@@ -75,7 +78,15 @@ function ge_stepset() {
 function ge_game_default_init(width, height) {
 	ge_create_canvas(width, height);
 	ge_create_buffer();
-	ge_canvas.addEventListener('mousemove',ge_update_mouse);
+	ge_canvas.addEventListener("mousemove",ge_update_mouse_move);
+	ge_canvas.onmousedown = ge_update_mouse_click;
 	ge_set_font("arial",20,"#000");
 	setInterval(ge_stepset,(1000/(ge_game_speed*2)));
+}
+
+function rnd(amount, high = 0)
+{
+	if(high == 0)
+		return Math.floor(Math.random() * amount);
+	return Math.floor((Math.random() * high) + amount);
 }
