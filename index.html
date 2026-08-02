@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Low Voltage Business Name | Commercial Tech Integration</title>
+    <style>
+        /* --- Reset & Variables --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary: #0f172a;    /* Deep Slate/Navy */
+            --accent: #0284c7;     /* Tech Blue */
+            --light-bg: #f8fafc;   /* Soft Off-White */
+            --text-main: #334155;  /* Charcoal Gray */
+            --text-dark: #0f172a;  /* Dark Text */
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        /* --- Utility Classes --- */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+        }
+
+        /* --- Header / Nav --- */
+        header {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+            display: block;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* --- Services Section --- */
+        .services {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .service-card h3 {
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        /* --- About / Guarantee --- */
+        .about {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            font-size: 1.1rem;
+        }
+
+        /* --- Contact / CTA --- */
+        .contact {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 16px;
+        }
+
+        .contact p {
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #020617;
+            color: #64748b;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive Tweaks --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .contact-info { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="logo.svg" alt="AKOLO">
+                </a>
+                <a href="#contact" class="btn">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Commercial Low Voltage & Systems Integration</h1>
+            <p>Reliable structured cabling, network infrastructure, security systems, and audio-visual installations built to keep your operations running smoothly.</p>
+            <a href="#contact" class="btn">Request a Site Survey</a>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <h3>Structured Cabling</h3>
+                    <p>Cat6/Cat6A cabling, fiber optic backbones, server rack cleanups, and certified patch panel terminations.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Network Infrastructure</h3>
+                    <p>Commercial Wi-Fi deployment, managed switches, router setup, and network rack installations.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Commercial Security & CCTV</h3>
+                    <p>IP camera systems, NVR setup, access control installations, and security system integration.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Audio-Visual Systems</h3>
+                    <p>Commercial TV mounting, distributed audio, conference room AV setups, and digital signage.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Company Overview -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Built for Clean, Dependable Work</h2>
+            <p>We deliver professional, code-compliant low-voltage installations tailored for businesses and commercial facilities. From single cable runs to full facility rollouts, we ensure every cable is properly run, labeled, and tested.</p>
+        </div>
+    </section>
+
+    <!-- Contact & Call to Action -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Ready to Upgrade Your Infrastructure?</h2>
+            <p>Reach out today for a consultation or on-site estimate.</p>
+            <a href="mailto:contact@akolo.net" class="btn">Contact Us</a>
+
+            <div class="contact-info">
+                <div>✉️ Email: <a href="mailto:contact@akolo.net">contact@akolo.net</a></div>
+                <div>📍 Location: Serving London Ontario Area</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AKOLO. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
